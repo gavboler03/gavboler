@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+:root {
+  --bg-color: #f7f7f7;
+  --primary-color: #222831;
+  --secondary-color: #31363f;
+  --accent-color: #76abae;
+  --text-color: #333;
+  --light-color: #eeeeee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--light-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Header Section */
+header {
+  background-color: var(--primary-color);
+  padding: 2rem;
+  color: var(--light-color);
+  text-align: center;
+  width: 100%;
+}
+
+header .headshot img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 4px solid var(--light-color);
+  transition: transform 0.3s;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--light-color);
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: var(--light-color);
+}
+
+header .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  fill: var(--accent-color);
+}
+
+header .social-links img {
+  width: 35px;
+  transition: transform 0.3s;
+}
+
+header .social-links img:hover {
+  transform: scale(1.2);
+}
+
+/* About Section */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+  background-color: var(--light-color);
+}
+
+.about__title {
+  font-size: 2rem;
+  color: var(--primary-color);
+  flex-basis: 30%;
+  text-align: left;
+  margin-right: 2rem;
+}
+
+.about__text {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  flex-basis: 70%;
+  line-height: 1.8;
+}
+
+/* Coursework Section */
+.coursework {
+  padding: 3rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  margin-bottom: 3rem;
+}
+
+.coursework__title {
+  font-size: 2rem;
+  color: var(--light-color);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.coursework__columns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.coursework__column {
+  max-width: 250px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.coursework__column h3 {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.coursework__column ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.coursework__column li {
+  font-size: 1.1rem;
+  color: var(--light-color);
+  line-height: 1.8;
+}
+
+/* Experience Section */
+.experience {
+  padding: 3rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.experience__title {
+  font-size: 2.2rem;
+  color: var(--light-color);
+  text-align: center;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.experience__item {
+  margin-bottom: 2.5rem;
+  background-color: var(--secondary-color);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experience__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.experience__item h3 {
+  font-size: 1.6rem;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.experience__item p {
+  font-size: 1.1rem;
+  color: var(--light-color);
+  line-height: 1.8;
+}
+
+.experience__item p:first-of-type {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.experience_nested_item {
+  padding-left: 2rem;
+}
+
+/* Skills Section */
+.skills {
+  padding: 3rem 2rem;
+  background-color: var(--light-color);
+  color: var(--primary-color);
+  margin-bottom: 3rem;
+}
+
+.skills__title {
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.skills__item {
+  cursor: pointer;
+  text-align: center;
+}
+
+.skills__heading {
+  font-size: 1.3rem;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+.skills__details {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  display: none;
+  margin-top: 0.5rem;
+  line-height: 1.8;
+  max-width: 300px;
+}
+
+/* Projects Section */
+.projects {
+  padding: 4rem 1rem;
+  background-color: var(--light-color);
+}
+
+.projects__title {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.project-card {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border-radius: 0.8rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.project-card__image {
+  width: 100%;
+  height: 12rem;
+  object-fit: stretch;
+}
+
+.project-card__content {
+  padding: 1rem;
+}
+
+.project-card__title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card__description {
+  margin-bottom: 1rem;
+}
+
+.project-card__links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.project-card__link {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.project-card__link:hover {
+  color: var(--light-color);
+}
+
+@media (max-width: 1200px) {
+  .projects__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: 1.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+
+  header .headshot img {
+    width: 100px;
+    height: 100px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .about {
+    flex-direction: column;
+    padding: 3rem 1rem;
+  }
+
+  .about__title {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .about__text {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .coursework__columns {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .coursework__column {
+    flex-basis: 100%;
+  }
+
+  .coursework__columns::before {
+    display: none;
+  }
+
+  .skills__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .projects__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  header {
+    padding: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  header p {
+    font-size: 1.1rem;
+  }
+
+  .about__title,
+  .experience__title,
+  .skills__title,
+  .projects__title {
+    font-size: 1.8rem;
+  }
+
+  .coursework__column h3,
+  .skills__heading,
+  .experience__item h3 {
+    font-size: 1.3rem;
+  }
+}
