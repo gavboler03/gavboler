@@ -1,4 +1,4 @@
-# Addison Adcock - Portfolio Website
+# Gavin Boler - Portfolio Website
 
 This is the personal portfolio website of Gavin Boler.
 
